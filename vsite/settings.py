@@ -25,7 +25,7 @@ SECRET_KEY = '6qiij%z524v%@4507dh0#6i%l20!**tqrbg4#f!c36_vt&qbl#'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['hamster197.pythonanywhere.com', '127.0.0.1']
+ALLOWED_HOSTS = ['superhamster197.pythonanywhere.com', '127.0.0.1']
 
 SITE_ID = 1
 
