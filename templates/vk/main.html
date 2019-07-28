@@ -1,5 +1,3 @@
 {% load account %}
 {% user_display user %}
-{% providers_media_js %}
-{% get_social_accounts user as accounts %}
-{{ accounts.vk }}
+{% user_display user as user_display %}
