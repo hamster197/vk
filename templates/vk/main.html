@@ -1,3 +1,5 @@
+{% load account %}
+{% user_display user %}
 
-        {% load account %}
-      Your id is  {% user_display user %}
+{% get_social_accounts user as accounts %}
+{{ accounts.vk }}
