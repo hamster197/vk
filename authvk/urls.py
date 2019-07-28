@@ -5,4 +5,4 @@ from authvk.views import MainView
 
 urlpatterns = [
     path('', MainView, name='main'),
-    ]
+]

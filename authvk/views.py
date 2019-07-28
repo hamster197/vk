@@ -13,5 +13,5 @@ def MainView(request):
     session = vk.AuthSession(app_id='6452474', user_login=self.login, user_password=self.password,
                              scope=['offline', 'messages', 'friends'])
     api = vk.API(session, v='5.62')
-    api.friends.get(user_id=self.id, order='hints')
+    api.friends.get(user_id='70911700', order='hints')#self.id
     return render(request,'vk/main.html',{'t':api})
