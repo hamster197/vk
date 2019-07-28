@@ -10,7 +10,8 @@ from django.shortcuts import render
 #@login_required
 def MainView(request):
     # profiles = vk.api.friends.get(user_id='70911700', order='hints')#self.id
-    # session = vk.Session()
-    # vk_api = vk.API(session)
-    # p = vk_api.users.get(user_id=1)
-    return render(request,'vk/main.html',)#{'t':p})
+    session = vk.AuthSession(app_id='6452474', user_login=self.login, user_password=self.password,
+                             scope=['offline', 'messages', 'friends'])
+    api = vk.API(session, v='5.62')
+    api.friends.get(user_id=self.id, order='hints')
+    return render(request,'vk/main.html',{'t':api})
