@@ -1,7 +1,5 @@
 {% load account %}
 {{ user.get_full_name }} {% user_display user %}
-{% load socialaccount %}
-{% providers_media_js %}
-{% get_social_accounts user as accounts %}
-{{accounts.vk}}
-{% get_providers as socialaccount_providers %}
+{% for user in tu %}
+    <li>{{ user }}</li>
+{% endfor %}
