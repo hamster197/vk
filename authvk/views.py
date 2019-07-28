@@ -13,4 +13,4 @@ def MainView(request):
     # session = vk.Session()
     # vk_api = vk.API(session)
     # p = vk_api.users.get(user_id=1)
-    return render(request,'vk/main.html',){'t':p})
+    return render(request,'vk/main.html',)#{'t':p})
